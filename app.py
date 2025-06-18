@@ -16,7 +16,8 @@ def feedback():
         comment=request.form['comment']
         conn=get_db_connection()
         cursor=conn.cursor()
-        cursor.execute("INSERT INTO feedback (student_name,email,comment) VALUES (%s,%s,%s)",(name,email,comment))
+        cursor.execute("INSERT INTO feedback (student_name,email,comments) VALUES (%s,%s,%s)", (name, email, comment))
+
         conn.commit()
         cursor.close()
         conn.close()
