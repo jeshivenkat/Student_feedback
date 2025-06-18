@@ -6,6 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    hey
+    {% extends 'base.html' %}
+    {% block content %}
+    <h2 class="mb-4 text-color">Welcome to Student Feedback portal</h2>
+    <div class="row justify-content center">
+        <div class="col-md-6">
+            <div class="card" shadow-lg>
+                <img src="https://www.maitreyi.ac.in/assets/front/images/mainbanner/slide1.jpg" class="card-img-top" alt="College Image">
+                <div class="card-body">
+                    <h5 class="card-title">pindi institute </h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa voluptatum saepe quaerat magnam repellat culpa voluptatem eveniet id! Voluptatum veniam facere aliquam assumenda quos asperiores ducimus provident facilis fugit!
+                    </p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item">Modern labs and infrastructure</li>
+                        <li class="list-group-item">Experienced faculty</li>
+                        <li class="list-group-item">Industry-ready curriculum</li>
+                        <li class="list-group-item">Placement Assistance</li>
+                        <li class="list-group-item">regular workshops and Seminars</li>
+                    </ul>
+                    <a href="/feedback" class="btn btn-primary">Submit feedback</a>
+                    <a href="/admin" class="btn btn-secondary">Admin Panel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
 </body>
 </html>
